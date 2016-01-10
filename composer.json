@@ -1,0 +1,22 @@
+{
+    "name" : "jasuwienas/data_table",
+    "description" : "Integrates datatable into Symfony2 project.",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "Jasuwienas Mariusz",
+        "email" : "jasuwienas@gmail.com"
+    }],
+    "keywords" : [
+        "datatable data tables datatables table symfony2"
+    ],
+    "license" : [
+        "MIT"
+    ],
+    "require" : {
+    },
+    "autoload" : {
+        "psr-4" : { "Jasuwienas\\DataTableBundle\\" : ""}
+    },
+    "repositories" : [{
+    }]
+}
