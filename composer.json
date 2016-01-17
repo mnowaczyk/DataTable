@@ -1,5 +1,5 @@
 {
-    "name" : "jasuwienas/data_table",
+    "name" : "jasuwienas/data-table",
     "description" : "Integrates datatable into Symfony2 project.",
     "type" : "symfony-bundle",
     "authors" : [{

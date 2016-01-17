@@ -6,7 +6,7 @@ Integrates datatable into Symfony2 project.
 1. Add as composer dependency:
 
   ```bash
-  composer require jasuwienas/data_table
+  composer require jasuwienas/data-table
   ```
 2. Add in application kernel:
 
