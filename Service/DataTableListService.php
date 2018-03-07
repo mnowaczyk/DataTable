@@ -150,6 +150,12 @@ class DataTableListService {
 
     protected function filterBy($columnName, $value) {
         $column = $this->parseToQueryBuilderFormat($columnName);
+        $rootColumn = explode('.', $columnName)[0];
+        $rootEntity = $this->queryBuilder->getRootEntities()[0];
+        $metadata = $this->queryBuilder->getEntityManager()->getClassMetadata($rootEntity);
+        if (empty($metadata->fieldMappings[$rootColumn])){
+            return;
+        }
         $paramName = str_replace('.', '_', $column);
         if(is_array($value)) {
             if(!array_key_exists('value', $value)  || !isset($value['comparision'])) {
