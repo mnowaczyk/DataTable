@@ -82,13 +82,9 @@ class DataTableListService {
     }
 
     public function get(ParameterBag $query) {
-        try {
-            $this->initializeData($query);
-            $this->runQuery();
-            return $this->getResults();
-        } catch(Exception $e) {
-            return $this->handleError($e->getMessage());
-        }
+        $this->initializeData($query);
+        $this->runQuery();
+        return $this->getResults();
     }
 
     /**
